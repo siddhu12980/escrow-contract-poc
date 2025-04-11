@@ -347,12 +347,11 @@ describe("escrow", () => {
     console.log("✔️ Taker A Balance:", takerA.value.uiAmountString);
     console.log("✔️ Taker B Balance:", takerB.value.uiAmountString);
 
-    // You can hardcode or dynamically refer to these numbers based on your escrow
-    const expectedMakerA = 90; // Maker gave 100 A
-    const expectedMakerB = 100; // Maker received 10 B
+    const expectedMakerA = 90; 
+    const expectedMakerB = 100; 
 
-    const expectedTakerA = 10; // Taker received 100 A
-    const expectedTakerB = 0; // Taker started with 100 B, gave 10
+    const expectedTakerA = 10; 
+    const expectedTakerB = 0; 
 
     expect(Number(makerA.value.amount)).equal(expectedMakerA);
     expect(Number(makerB.value.amount)).equal(expectedMakerB);
